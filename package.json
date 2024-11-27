@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/app.js",
     "start:prod": "MODE=PRODUCTION nodemon",
-    "dev": "nodemon src/app.ts",
+    "dev": "nodemon",
     "build": "tsc"
   },
   "author": "brijesh",
