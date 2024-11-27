@@ -4,9 +4,9 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node --es-module-specifier-resolution=node dist/app.js",
-    "start:prod": "MODE=PRODUCTION node --es-module-specifier-resolution=node dist/app.js",
-    "dev": "nodemon --exec ts-node-dev --es-module-specifier-resolution=node src/app.ts",
+    "start": "node dist/app.js",
+    "start:prod": "MODE=PRODUCTION nodemon",
+    "dev": "nodemon",
     "build": "tsc"
   },
   "author": "brijesh",

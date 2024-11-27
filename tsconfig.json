@@ -9,5 +9,17 @@
     "outDir": "./dist"
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "experimentalSpecifierResolution": "node",
+    "transpileOnly": true,
+    "esm": true
+  }
 }
+
+// "scripts": {
+//     "start": "node --es-module-specifier-resolution=node dist/app.js",
+//     "start:prod": "MODE=PRODUCTION node --es-module-specifier-resolution=node dist/app.js",
+//     "dev": "nodemon --exec ts-node-dev --es-module-specifier-resolution=node src/app.ts",
+//     "build": "tsc"
+//   },

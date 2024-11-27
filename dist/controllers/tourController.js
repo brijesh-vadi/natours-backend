@@ -1,6 +1,6 @@
 import { tourSchema } from '../models/tourModel';
 import { z } from 'zod';
-import { pool } from '../db/postgres-pool';
+import pool from '../db/postgres-pool';
 export const validateTourBody = async (req, res, next) => {
     try {
         req.body = tourSchema.parse(req.body);
