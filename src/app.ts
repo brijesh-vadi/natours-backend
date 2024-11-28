@@ -1,6 +1,6 @@
+import dotenv from 'dotenv';
 import express from 'express';
 import morgan from 'morgan';
-import dotenv from 'dotenv';
 import pool from './db/postgres-pool';
 import tourRouter from './routes/tourRoute';
 import userRouter from './routes/userRoute';

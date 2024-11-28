@@ -4,8 +4,8 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node --es-module-specifier-resolution=node dist/app.js",
-    "dev": "nodemon --no-warnings --exec ts-node-dev --es-module-specifier-resolution=node src/app.ts",
+    "start": "node  dist/app.js",
+    "dev": "nodemon src/app.ts",
     "build": "tsc"
   },
   "author": "brijesh",
