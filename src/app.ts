@@ -1,9 +1,9 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import morgan from 'morgan';
-import pool from './db/postgres-pool';
-import tourRouter from './routes/tourRoute';
-import userRouter from './routes/userRoute';
+import pool from './db/postgres-pool.js';
+import tourRouter from './routes/tourRoute.js';
+import userRouter from './routes/userRoute.js';
 
 dotenv.config();
 
