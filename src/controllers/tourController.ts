@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
-import { Tour, tourSchema } from '../models/tourModel.js';
+import { Tour, tourSchema } from '../models/tourModel';
 import { z } from 'zod';
-import pool from '../db/postgres-pool.js';
+import pool from '../db/postgres-pool';
 
 export const validateTourBody = async (req: Request<{}, {}, Tour>, res: Response, next: NextFunction) => {
   try {

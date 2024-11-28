@@ -6,7 +6,7 @@ import {
   getTourById,
   updateTour,
   validateTourBody,
-} from '../controllers/tourController.js';
+} from '../controllers/tourController';
 
 const tourRouter = express.Router();
 
